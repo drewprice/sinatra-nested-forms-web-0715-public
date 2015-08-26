@@ -1,1 +1,42 @@
-<h1>Make your form here</h1>
+<h1>Create ye' scallywag</h1>
+
+<form class="form-inline" action="/pirates" method="post">
+  <div class="form-group">
+    <h2>Attributes</h2>
+
+    <label for="name">Name</label>
+    <input type="text" name="pirate[name]">
+
+    <label for="weight">Weight</label>
+    <input type="text" name="pirate[weight]">
+
+    <label for="height">Height</label>
+    <input type="text" name="pirate[height]">
+  </div>
+
+  <div class="form-group">
+    <h2>Ships</h2>
+
+    <h3>Ship I</h3>
+    <label for="name">Name</label>
+    <input type="text" name="pirate[ships][0][name]">
+
+    <label for="type">Type</label>
+    <input type="text" name="pirate[ships][0][type]">
+
+    <label for="booty">Booty</label>
+    <input type="text" name="pirate[ships][0][booty]">
+
+    <h3>Ship II</h3>
+    <label for="name">Name</label>
+    <input type="text" name="pirate[ships][1][name]">
+
+    <label for="type">Type</label>
+    <input type="text" name="pirate[ships][1][type]">
+
+    <label for="booty">Booty</label>
+    <input type="text" name="pirate[ships][1][booty]">
+  </div>
+
+  <input type="submit" name="submit" value="Submit" class="btn btn-default">
+</form>
